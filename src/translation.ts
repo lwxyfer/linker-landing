@@ -4,9 +4,10 @@ import XHR from "i18next-xhr-backend";
 
 import translationEn from "./locales/en/translation.json";
 import translationEs from "./locales/es/translation.json";
+import translationZh from "./locales/zh/translation.json";
 
 i18n
-  .use(XHR)
+  // .use(XHR)
   .use(LanguageDetector)
   .init({
     debug: false,
@@ -22,9 +23,12 @@ i18n
       en: {
         translations: translationEn,
       },
-      es: {
-        translations: translationEs,
+      zh: {
+        translations: translationZh,
       },
+      // es: {
+      //   translations: translationEs,
+      // },
     },
     ns: ["translations"],
     defaultNS: "translations",

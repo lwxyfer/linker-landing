@@ -42,13 +42,20 @@ const ContentBlock = ({
           id={id}
           direction={direction}
         >
-          <Col lg={11} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width="100%" height="100%" />
-          </Col>
-          <Col lg={11} md={11} sm={11} xs={24}>
+          {
+            icon ? <Col lg={11} md={11} sm={12} xs={24}>
+              <SvgIcon src={icon} width="100%" height="100%" />
+            </Col> : null
+          }
+          
+          <Col lg={icon ? 11 : 24} md={icon ? 11 : 24} sm={icon ? 11 : 24} xs={24}>
             <ContentWrapper>
               <h6>{t(title)}</h6>
-              <Content>{t(content)}</Content>
+              {
+                typeof content === 'string' ? <Content style={{
+                  whiteSpace: 'pre-wrap'
+                }}>{t(content)}</Content> : (content)
+              }
               {direction === "right" ? (
                 <ButtonWrapper>
                   {typeof button === "object" &&
@@ -64,7 +71,7 @@ const ContentBlock = ({
                           <Button
                             key={id}
                             color={item.color}
-                            onClick={() => scrollTo("about")}
+                            onClick={() => scrollTo("mission")}
                           >
                             {t(item.title)}
                           </Button>

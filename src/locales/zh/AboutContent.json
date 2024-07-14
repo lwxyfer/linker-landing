@@ -1,0 +1,17 @@
+{
+  "title": "轻快、快速响应",
+  "text": "这个模板已经可以直接使用，除非你想自定义样式。",
+  "section": [
+    {
+      "title": "为什么选择Ant Design?",
+      "content": "Ant Design是一个React UI库，它有很多易于使用的组件来构建优雅的UI。",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "为什么选择styled-components?",
+      "content": "Styled Components让你对组件有完全的控制权。",
+      "icon": "notes.svg"
+    }
+  ]
+}
+

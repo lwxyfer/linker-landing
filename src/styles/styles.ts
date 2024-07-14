@@ -19,6 +19,7 @@ export const Styles = createGlobalStyle`
     html,
     a {
         font-family: 'Motiva Sans Light', sans-serif;
+        font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
     }
 
 
@@ -57,7 +58,7 @@ export const Styles = createGlobalStyle`
     h4,
     h5,
     h6 {
-        font-family: 'Motiva Sans Bold', serif;
+        font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
         color: #18216d;
         font-size: 56px;
         line-height: 1.18;
